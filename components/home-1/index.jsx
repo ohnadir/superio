@@ -1,6 +1,6 @@
 import Link from "next/link";
 import About from "../about/About";
-import AppSection from "../app-section/AppSection";
+// import AppSection from "../app-section/AppSection";
 import Blog from "../blog/Blog";
 import CallToAction from "../call-to-action/CallToAction";
 import LoginPopup from "../common/form/login/LoginPopup";
@@ -60,41 +60,17 @@ const index = () => {
                         </div>
                     </div>
 
-                    <div className="row " data-aos="fade-up">
-                        <JobFeatured1 />
-                    </div>
-
-                    <div className="btn-box">
-                        <Link
-                            href="/job-list-v1"
-                            className="theme-btn btn-style-one bg-blue"
-                        >
-                            <span className="btn-title">Load More Listing</span>
-                        </Link>
-                    </div>
-                </div>
-            </section>
-            {/* End Job Featured Section */}
-
-            <section className="testimonial-section">
-                <div className="container-fluid">
-                    {/* <!-- Sec Title --> */}
-                    <div className="sec-title text-center">
-                        <h2>Testimonials From Our Customers</h2>
-                        <div className="text">
-                            Lorem ipsum dolor sit amet elit, sed do eiusmod
-                            tempor
-                        </div>
-                    </div>
-                </div>
-                <div className="carousel-outer" data-aos="fade-up">
+                    <div className="carousel-outer" data-aos="fade-up">
                     {/* <!-- Testimonial Carousel --> */}
                     <div className="testimonial-carousel gap-x25 center-item-active slick-list-visible">
                         <Testimonial />
                     </div>
                 </div>
+                </div>
             </section>
-            {/* <!-- End Testimonial Section --> */}
+            {/* End Job Featured Section */}
+
+            
 
 
 

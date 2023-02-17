@@ -18,7 +18,7 @@ const CopyrightFooter = () => {
             . All Right Reserved.
           </div>
           <div className="social-links">
-            <Social /> <span><Link href="/">Terms & Conditions</Link></span>
+            <Social />
           </div>
         </div>
       </div>

@@ -1,11 +1,13 @@
 import testimonilaContent from "../../data/testimonial";
+import jobFeatured from "../../data/job-featured";
 import Slider from "react-slick";
+import Link from "next/link";
 
 const Testimonial = () => {
   const settings = {
     dots: true,
     speed: 1000,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     center: true,
@@ -14,18 +16,52 @@ const Testimonial = () => {
   return (
     <>
       <Slider {...settings} arrows={false}>
-        {testimonilaContent.slice(0, 3).map((item) => (
-          <div className="testimonial-block" key={item.id}>
-            <div className="inner-box">
-              <h4 className="title">{item.feedback}</h4>
-              <div className="text">{item.feedbackText}</div>
-              <div className="info-box">
-                <div className="thumb">
-                  <img src={item.avatar} alt="testimonial" />
+        {jobFeatured.slice(0, 6).map((item) => (
+            <div className="job-block " key={item.id}>
+              <div className="inner-box" >
+                <div className="content">
+                  <span className="company-logo">
+                    <img src={item.logo} alt="item brand" />
+                  </span>
+                  <h4>
+                    <Link href={`/job-single-v1/${item.id}`}>{item.jobTitle}</Link>
+                  </h4>
+
+                  <ul className="job-info">
+                    <li>
+                      <span className="icon flaticon-briefcase"></span>
+                      {item.company}
+                    </li>
+                    {/* compnay info */}
+                    <li>
+                      <span className="icon flaticon-map-locator"></span>
+                      {item.location}
+                    </li>
+                    {/* location info */}
+                    <li>
+                      <span className="icon flaticon-clock-3"></span> {item.time}
+                    </li>
+                    {/* time info */}
+                    <li>
+                      <span className="icon flaticon-money"></span> {item.salary}
+                    </li>
+                    {/* salary info */}
+                  </ul>
+                  {/* End .job-info */}
+
+                  <ul className="job-other-info">
+                    {item.jobType.map((val, i) => (
+                      <li key={i} className={`${val.styleClass}`}>
+                        {val.type}
+                      </li>
+                    ))}
+                  </ul>
+                  {/* End .job-other-info */}
+
+                  <button className="bookmark-btn">
+                    <span className="flaticon-bookmark"></span>
+                  </button>
                 </div>
-                <h4 className="name">{item.name}</h4>
-                <span className="designation">{item.designation}</span>
-              </div>
             </div>
           </div>
         ))}

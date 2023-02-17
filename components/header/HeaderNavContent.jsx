@@ -14,7 +14,7 @@ const HeaderNavContent = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href='/jobs'>
+                        <Link href='/job-list-v1'>
                             Jobs
                         </Link>
                     </li>
@@ -24,7 +24,7 @@ const HeaderNavContent = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href='/blog'>
+                        <Link href='/blog-details/2'>
                             Blog
                         </Link>
                     </li>

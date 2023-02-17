@@ -1,7 +1,7 @@
 import LoginPopup from "../../common/form/login/LoginPopup";
 import Partner from "../../common/partner/Partner";
 import FooterDefault from "../../footer/common-footer";
-import DefaulHeader from "../../header/DefaulHeader";
+import DefaulHeader2 from "../../header/DefaulHeader2";
 import MobileMenu from "../../header/MobileMenu";
 import Funfact from "../../fun-fact-counter/Funfact";
 import ImgBox from "./ImgBox";
@@ -20,13 +20,13 @@ const index = () => {
       <LoginPopup />
       {/* End Login Popup Modal */}
 
-      <DefaulHeader />
+      <DefaulHeader2 />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
       {/* End MobileMenu */}
 
-      <Breadcrumb title="About Us" meta="About Us" />
+      <Breadcrumb title="Kik vagyunk mi?" meta="Kik vagyunk mi?" />
       {/* <!--End Page Title--> */}
 
       <section className="about-section-three">

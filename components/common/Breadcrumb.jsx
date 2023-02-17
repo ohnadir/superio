@@ -8,9 +8,9 @@ const Breadcrumb = ({ title = "", meta = "" }) => {
           <h1>{title}</h1>
           <ul className="page-breadcrumb">
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/">itthon</Link>
             </li>
-            <li>{meta}</li>
+            <li> {meta}</li>
           </ul>
         </div>
       </div>
